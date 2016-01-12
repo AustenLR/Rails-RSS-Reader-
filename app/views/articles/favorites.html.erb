@@ -1,0 +1,9 @@
+<div class="col-md-offset-2 col-md-8 jumbotron">
+  <h1 class="text-center page-header">Your Favorites <small class="glyphicon glyphicon-star"> <%= link_to "Back to RSS Reader", articles_path, class:"btn btn-info" %></small></h1>
+    <% @articles.each do |article| %>
+      <h2><a href=<%=article[:content]%>><%= article[:headline] %> </a></h2>
+      <a> 
+      <br>
+    <% end %>
+  <br>
+</div>
